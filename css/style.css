@@ -77,7 +77,7 @@ header .heading .heading-input {
   font-size: 2rem;
 }
 .heading .toggle-icons:hover {
-  transform: rotate(90 deg);
+  transform: rotate(90deg);
 }
 .nav {
   height: 0;
