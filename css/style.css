@@ -1,0 +1,518 @@
+@import url('./font.css');
+
+:root{
+    /* theme colors*/
+--text-gray:#3f4954;
+--text-light:#686666da;
+--bg-color:#0f0f0f;
+--white:#ffffff;
+--midnight:#0F5298;
+--sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*theme fonts family*/
+--Abel: 'Abel';
+--Anton: 'Anton';
+--Josefin: 'Josefin';
+--Lexend: 'Lexend';
+--Livvic: 'Livvic';
+}
+
+  /*global styling*/
+  ul{
+      list-style-type: none;
+  }
+  a{
+      text-decoration: none;
+  }
+  
+  section{
+      width: 90%;
+      margin: 1rem auto 3rem;
+  }
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 1rem 2rem .5rem 2rem;
+    background: #dadada;
+    border-bottom: 5px solid var(--midnight);
+}
+header .heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2rem ;
+}
+header .heading .brand{
+    font-size: 4rem;
+    font-family: var(--Livvic);
+    font-weight: lighter;
+   
+}
+
+header .heading .heading-input{
+    margin-top:2rem ;
+    background: white;
+    width: 20rem;
+    height: 1.5rem;
+    border: 1px solid var(--text-gray);
+    padding-top: .5rem;
+
+}
+.heading .heading-input input{
+    border: none;
+    outline:none ;
+    width: 90%;
+    
+}
+.heading span i{
+    padding: -2rem;
+    
+}
+.heading .toggle-icons{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: none;
+}
+.heading .toggle-icons .fas{
+    font-size: 2rem;
+}
+
+.nav{
+    height: 0;
+    min-height: 7vh;
+    overflow: hidden;
+    transition:height 1s ease-in-out;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    margin-left: -4rem
+}
+.nav .nav-items .nav-link{
+    padding: 1rem 2rem .5rem 2rem ;
+}
+.nav .nav-items .nav-link a{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: var(--Abel);
+    color: var(--text-gray);
+}
+.nav .nav-items .nav-link:hover{
+    background: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.show{
+    height: 55vh;
+    }
+
+/*-------end of header------*/
+/*-------hero section------*/
+section .hero-container{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+    overflow: hidden;
+}
+section .hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+section .hero-img{
+ flex: 1 1 600px;
+ height: 100vh;
+ overflow: hidden;
+ 
+}
+section .hero-text{
+    padding: 1rem;
+    padding-top: -2rem;
+    height: auto;
+    width:100%;
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    color: white;
+    background: black;
+    opacity: .7;
+    
+   
+    
+}
+
+section .hero-container .hero-text h2{
+    font-size: 2rem;
+    font-family: var(--Abel);
+    margin-top: -.5rem;
+    padding-right: 1rem;
+
+}
+section .hero-container .hero-text a  h2{
+    color: white;
+}
+section .hero-container .hero-text a  h2:hover{
+    color: var(--text-light);
+}
+section .hero-container .hero-text p{
+    font-size: 1.1rem;
+    font-family: var(--Lexend);
+    padding-right: 1rem;
+    margin-top: -1.5rem;
+   
+}
+/*---------------end of hero section--------------------*/
+/*---------------main section--------------------*/
+section.blog-body{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+section .post-content{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+ 
+}
+
+section .post-content .post-image{
+    position: relative;
+    
+}
+
+.post-content .post-image #image{
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease ;
+    display: block;
+   
+    
+}
+.post-content .post-image > div{
+    overflow: hidden;
+    
+}
+ .post-image #image:hover{
+    transform: scale(1.2);
+}
+section .post-content .post-clue{
+    background: skyblue;
+    padding: 1.2rem;
+    display: inline-block;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: -4%;
+    left: 15vw;
+    
+}
+section .post-content .post-clue span{
+    padding-right: 1rem;
+    font-family: var(--Abel);
+    
+}
+
+.post-content .post-body .post-title{
+    font-size: 1.7rem;
+    font-family: var(--Anton);
+    padding-top: 3rem;
+    position: relative;
+}
+.post-content .post-body .post-title a{
+    color: var(--text-gray);
+}
+.post-content .post-body .post-title a:hover{
+    color: var(--text-light);
+}
+.post-content .post-body .post-text{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+    
+}
+.post-content button{
+    padding: .7rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    background: var(--sky);
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.post-content button i{
+    padding-left: 1rem;
+}
+.main-content .post-content:last-child hr{
+    width: 0;
+    height: 0;
+}
+.pagination {
+    text-align: center;
+    margin-bottom: 5rem;
+    
+}
+.pagination a .fas{
+    color: var(--text-gray);
+    padding: .3rem 2rem;
+}
+.pagination  a.page{
+    background: var(--text-gray);
+    color: var(--white);
+    border-radius: 50%;
+    padding: .6rem .9rem;
+    font-family: var(--Lexend);
+    margin: .3rem;
+}
+/*-----------------------side-content-----------------------------*/
+
+.side-content {
+margin: 0.3rem 3rem;
+margin-right: 0rem;
+}
+.side-content .category{
+    margin-bottom: 8rem;
+}
+.side-content .category h2, .side-content .news h2, .popular-tag h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: var(--Lexend);
+    margin-bottom: 2rem;
+}
+.side-content .category li{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+   padding: .4rem 1rem;
+    background: var(--sky);
+    border-radius: 3rem;
+    margin: .8rem;
+    width: 70%;
+}
+.side-content .category li a{
+color: black;
+font-family: var(--Livvic);
+}
+.side-content .category li a:hover{
+    color: var(--text-light);
+}
+
+.side-content .popular{
+    margin:10rem 0rem 12rem;
+}
+.side-content .popular h2{
+    font-size: 1.5rem;
+    font-family: var(--Lexend);
+    margin-bottom: 3rem;
+
+}
+.side-content .post-body .post-title{
+    font-size: 1rem;
+    padding: 2rem 0rem 1rem;
+}
+section .side-content .post-content .post-clue{
+    background: white;
+    display: flex;
+    border-radius:0 ;
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    padding: .7rem 0 .7rem .7rem;
+    
+}
+section .side-content .post-content{
+margin-bottom: 5rem;
+}
+
+.side-content .news input{
+    padding:.7rem 1rem ;
+    display: block;
+    width: 70%;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    font-family: var(--Lexend);
+}
+.side-content .news button{
+    margin: 1rem;
+    margin-left: 2rem;
+    width: 80%;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    background: var(--sky);
+    border: none;
+}
+
+.side-content .popular-tag{
+    margin-top: 10rem;
+}
+.side-content .popular-tag .tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side-content .popular-tag .tag{
+    padding: .4rem 1rem;
+    background: var(--sky);
+    border-radius: 3rem;
+    margin: .5rem .7rem;
+    font-family: var(--Abel);
+  
+   
+    
+}
+
+/*-------------------end of blog body section--------------*/
+footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+    
+}
+footer section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+}
+.footer{
+    margin-top: 5rem;
+}
+
+footer h2{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-family: var(--Lexend);
+    margin-top: 5rem;
+}
+footer p{
+    color: var(--text-light);
+    font-family: var(--Lexend);
+    margin-right: 2rem;
+}
+footer .form-element{
+   
+    background: black;
+    margin-right: 2rem;
+}
+footer .form-element input{
+    background: transparent;
+    border: 0;
+    font-family: var(--Josefin);
+    padding: .4rem .7rem;
+    width: 75%;
+    font-size: 1rem;
+}
+footer .form-element i{
+    background: var(--sky);
+    padding: .7rem 1rem;
+    cursor: pointer;
+}
+footer .flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+footer .flex-row > img{
+    width: 25%;
+    height: 50%;
+    display: inline-block;
+    object-fit: cover;
+    margin:.3rem .5rem;
+}
+footer .follow{
+    margin-left: 2rem;
+}
+footer .follow i{
+    color: white;
+    padding-right: 1rem;
+}
+footer .rights{
+    text-align: center;
+   justify-content: center; 
+   font-family: var(--Josefin);
+   
+}
+
+footer .rights a{
+    color: white;
+}
+footer .move-up{
+position: absolute;
+right: 5rem;
+bottom: 10rem;
+cursor: pointer;
+
+}
+footer .move-up i{
+    font-size: 2.2rem;
+    color: var(--midnight);
+}
+footer .move-up i:hover{
+    color: var(--white);
+}
+@media screen and (max-width:750px){
+    header .heading{
+        margin-bottom: -2rem;
+    }
+    .heading .toggle-icons{
+        display: initial;
+    }
+    header .heading .heading-input{
+        display: none;
+    }
+    .nav .nav-items{
+        flex-direction: column;
+        margin-top: 5rem;
+        justify-content: space-around;
+        
+    }
+    section .hero-container .hero-text p{
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+    section.blog-body{
+        grid-template-columns: 100%;
+    }
+    footer section{
+        grid-template-columns: 100% !important;
+    }
+}
+@media screen and (max-width:1150px){
+    section .post-content .post-clue{
+    
+        border-radius: 0%;
+        left: 0rem;
+       
+    }  
+    .popular-content .post-content .post-clue {
+        display: none !important;
+    }
+    footer section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:520px){
+    section .hero-container .hero-text h2{
+        font-size: 1.7rem;
+    
+    }
+
+    section .hero-container .hero-text p{
+        font-size: 1rem;
+        }
+        footer .about, .newsletter, .follow, .instagram{
+            margin-top: -1rem;
+        }
+        footer .move-up{
+    
+    right: 2rem;
+    bottom: 25rem;
+    cursor: pointer;
+    
+}
+}
