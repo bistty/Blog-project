@@ -24,6 +24,7 @@ ul {
 a {
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 section {
   width: 90%;
@@ -84,6 +85,36 @@ header .heading .heading-input {
   min-height: 7vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
+=======
+.heading .heading-input input{
+    border: none;
+    outline:none ;
+    width: 90%;
+    
+}
+.heading span i{
+    padding: -2rem;
+    
+}
+.heading .toggle-icons{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: none;
+    cursor:pointer;
+}
+.heading .toggle-icons .fas{
+    font-size: 2rem;
+}
+.heading .toggle-icons:hover {
+  transform: rotate(90deg);
+}
+.nav{
+    height: 0;
+    min-height: 7vh;
+    overflow: hidden;
+    transition:height 1s ease-in-out;
+>>>>>>> 8dd07531a5e49084b380a1360116cf8ec9ebb4e9
 }
 
 .nav .nav-items {
@@ -489,3 +520,7 @@ footer .move-up i:hover {
     cursor: pointer;
   }
 }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 8dd07531a5e49084b380a1360116cf8ec9ebb4e9
