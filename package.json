@@ -1,0 +1,23 @@
+{
+  "name": "bistty-blog",
+  "version": "1.0.0",
+  "description": "A blog webite",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bistty/Blog-project.git"
+  },
+  "author": "Abisola Jesukunle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bistty/Blog-project/issues"
+  },
+  "homepage": "https://github.com/bistty/Blog-project#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}
